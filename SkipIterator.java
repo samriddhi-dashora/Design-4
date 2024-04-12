@@ -2,8 +2,8 @@
 
 /*
 Use a native iterator and keep the count of the skipped value. If we reach that value move native iterator to next and decrease count in fewq map
-TC:
-SC: 
+TC: O(1) for next() and skip() but O(1) amortized for hasNext()
+SC: O(n)
 */
 class SkipIterator implements Iterator<Integer> {
     Iterator<Integer> nit;
